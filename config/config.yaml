@@ -1,0 +1,28 @@
+artifacts_root : artifacts
+
+data_ingestion:
+    root_dir: artifacts/data_ingestion
+    source_url: https://github.com/Sumukhagc/datasets/raw/main/bigmart.zip
+    local_dir: artifacts/data_ingestion/data.zip
+    unzip_dir: artifacts/data_ingestion  
+
+data_transformation:
+    root_dir: artifacts/data_transformation
+    data_path: artifacts/data_ingestion/Train.csv
+    x_train_path: artifacts/data_transformation/x_train.pkl
+    x_test_path : artifacts/data_transformation/x_test.pkl
+    y_train_path: artifacts/data_transformation/y_train.pkl
+    y_test_path : artifacts/data_transformation/y_test.pkl
+
+model_trainer :
+    root_dir: artifacts/model_trainer
+    model_path: artifacts/model_trainer/model.pkl
+    x_train_path: artifacts/data_transformation/x_train.pkl
+    y_train_path: artifacts/data_transformation/y_train.pkl
+
+model_evaluation:
+    root_dir : artifacts/model_evaluation
+    model_path: artifacts/model_trainer/model.pkl
+    x_test_path : artifacts/data_transformation/x_test.pkl
+    y_test_path : artifacts/data_transformation/y_test.pkl
+    evaluation_path : artifacts/model_evaluation/evaluation.xlsx
