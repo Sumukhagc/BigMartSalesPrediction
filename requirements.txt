@@ -7,5 +7,4 @@ flask
 PyYAML
 dill
 joblib
-xlsxwriter
 -e .
