@@ -13,6 +13,7 @@ data_transformation:
     x_test_path : artifacts/data_transformation/x_test.pkl
     y_train_path: artifacts/data_transformation/y_train.pkl
     y_test_path : artifacts/data_transformation/y_test.pkl
+    scale_path: artifacts/data_transformation/scale.pkl
 
 model_trainer :
     root_dir: artifacts/model_trainer

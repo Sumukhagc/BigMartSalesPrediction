@@ -15,7 +15,7 @@ class ConfigurationManager:
     def get_data_transformation_config(self)->DataTransformationConfig:
         config=self.config['data_transformation']
         create_directories([config['root_dir']])
-        return DataTransformationConfig(config['root_dir'],config['data_path'],config['x_train_path'],config['x_test_path'],config['y_train_path'],config['y_test_path'])
+        return DataTransformationConfig(config['root_dir'],config['data_path'],config['x_train_path'],config['x_test_path'],config['y_train_path'],config['y_test_path'],config['scale_path'])
     
     def get_model_trainer_config(self)->ModelTrainerConfig:
         config=self.config['model_trainer']

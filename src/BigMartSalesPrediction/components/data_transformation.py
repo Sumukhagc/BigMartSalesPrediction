@@ -52,6 +52,7 @@ class DataTransformation:
         sc=StandardScaler()
         X=sc.fit_transform(X)
         x_train,x_test,y_train,y_test=train_test_split(X,Y,test_size=0.2,random_state=8)
+        save_obj(self.config.scale_path,sc)
         return x_train,x_test,y_train,y_test
     def preprocess(self):
         data=self.load_data()

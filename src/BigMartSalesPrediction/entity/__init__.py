@@ -16,6 +16,7 @@ class DataTransformationConfig:
     x_test_path:Path
     y_train_path:Path
     y_test_path:Path
+    scale_path:Path
 
 @dataclass
 class ModelTrainerConfig:
@@ -31,3 +32,4 @@ class ModelEvaluationConfig:
     x_test_path:Path
     y_test_path:Path    
     evaluation_path:Path
+
