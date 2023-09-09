@@ -30,3 +30,8 @@ https://127.0.0.1:8080
 ```
 python main.py
 ```
+#### **Working of the website hosted in aws ec2**
+
+
+https://github.com/Sumukhagc/BigMartSalesPrediction/assets/53410207/17358365-d035-4760-9fa1-c15dc1261e0d
+
